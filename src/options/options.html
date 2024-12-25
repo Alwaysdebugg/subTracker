@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Options</title>
+    <link rel="stylesheet" href="styles/options.css">
+</head>
+<body>
+    <div id="options-app">
+        <h1>Manage Subscriptions</h1>
+        <form id="subscription-form">
+            <input type="text" id="service-name" placeholder="Service Name" required>
+            <input type="number" id="price" placeholder="Price" required>
+            <input type="text" id="cycle" placeholder="Subscription Cycle" required>
+            <input type="date" id="next-renewal" placeholder="Next Renewal Date" required>
+            <button type="submit">Save Subscription</button>
+        </form>
+        <ul id="subscription-list">
+            <!-- Subscription items will be dynamically added here -->
+        </ul>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html> 
